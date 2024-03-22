@@ -5,7 +5,7 @@ import requests, datetime, os, sys
 now = datetime.datetime.now()
 Y = now.strftime("%Y")
 M = now.strftime("%M")
-# If the first argument is not included, then CVE and current year should be used as the search word
+# If no argument, then CVE and current year should be used as querry
 arg = sys.argv[1] if len(sys.argv) > 1 else f"cve-{Y}"
 
 uri = 'https://api.github.com/search/repositories'
