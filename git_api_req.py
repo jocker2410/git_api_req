@@ -23,20 +23,27 @@ def get_connectio(uri, params):
   return resp
 def get_data(resp):
   js_resp = resp.json()
-  print(Fore.YELLOW + "[+] Sort items")
+  print(Fore.YELLOW + "[+] Sort items\n")
   total_num = js_resp['total_count']
   items = js_resp['items']
+  # Sorted by project name
   sorted_items = sorted(items, key=lambda x: x['html_url'].split('/')[4].lower())
+  print(Fore.YELLOW + "[+] Sucessfully sorted\n\n")
   return sorted_items, total_num
 def display_data(sorted_items, total_num, Y, M):
   for item in sorted_items:
     y = item['pushed_at'].split('-')[0]
     m = item['pushed_at'].split('-')[1]
     last_update = item['pushed_at']
-
+    # Show only results that have been updated on this year or month
     if (y == Y or m == M ):
       url = item['html_url']
-      print(f"Last Update: {last_update}\nUrl:\n{url}\n")
+      user = item['html_url'].split('/')[3]
+      repo = item['html_url'].split('/')[4]
+      print(f"Creator:\t{user}\n"
+            f"Repository:\t{repo}\n"
+            f"Last Update:\t{last_update}\n"
+            f"Url:\t{url}\n")
   print(Fore.GREEN + f"Total: {total_num}")
   print(Style.RESET_ALL)
 
