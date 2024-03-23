@@ -3,11 +3,7 @@ import requests, datetime, os, sys
 
 uri = 'https://api.github.com/search/repositories'
 now = datetime.datetime.now()
-Y = now.strftime("%Y")
-M = now.strftime("%m")
-# If no argument, then use CVE- and current year as querry
-arg = sys.argv[1] if len(sys.argv) > 1 else f"cve-{Y}"
-params = {'q': arg}
+
 def clear_screen():
   if os.name == "nt":
     os.system("cls")
@@ -48,6 +44,12 @@ def display_data(sorted_items, total_num, Y, M):
   print(Style.RESET_ALL)
 
 def main():
+  Y = now.strftime("%Y")
+  M = now.strftime("%m")
+  # If no argument, then use CVE- and current year as querry
+  arg = sys.argv[1] if len(sys.argv) > 1 else f"cve-{Y}"
+  params = {'q': arg}
+
   clear_screen()
   resp =  get_connectio(uri, params)
   sorted_items, total_num = get_data(resp=resp)
