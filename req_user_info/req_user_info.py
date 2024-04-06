@@ -23,7 +23,7 @@ for follow in follower_data:
     print(Fore.GREEN + follow['login'])
 
 folowing_link = f"{url}/following"
-folowing_dresp = requests.get(folowing_link)
+folowing_resp = requests.get(folowing_link)
 folowing_data = folowing_resp.json()
 print(Fore.CYAN + "\nFollowing:")
 for folowing in folowing_data:
