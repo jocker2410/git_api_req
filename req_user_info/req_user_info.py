@@ -1,8 +1,10 @@
 from colorama import Fore, Style
 import requests
 import json
+import sys
 
-user = "crawler"
+
+user = sys.argv[1] if len(sys.argv) > 1 else f"jocker2410"
 # get user data
 url = f"https://api.github.com/users/{user}"
 resp = requests.get(url)
@@ -52,5 +54,5 @@ for repo in repo_data:
               Fore.GREEN + f"Message:\t" + Fore.LIGHTYELLOW_EX + f"{commit['commit']['message']}\n")
     print(Style.BRIGHT + Fore.MAGENTA + f"{n} commints found for {repo['name']}")
     comm_num += n
-print(Fore.GREEN + "Found " + Fore.LIGHTYELLOW_EX + f"{comm_num}" + Fore.GREEN + " comments for repo " + Fore.LIGHTYELLOW_EX + f"{data['login']}")
+print(Fore.GREEN + "Found " + Fore.LIGHTYELLOW_EX + f"{comm_num}" + Fore.GREEN + " comments for " + Fore.LIGHTYELLOW_EX + f"{data['login']}")
 Style.RESET_ALL

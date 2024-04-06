@@ -14,17 +14,18 @@ Try it out and see what you can find! Maybe you'll discover your next favourite 
 ### Bash  
 ```
  python3 req_user_info.py
+ python3 req_user_info.py jocker2410
  
 ```
 ### Windows  
 ```
  py req_user_info.py
-
+ py req_user_info.py jocker2410
 ```
 ### Tmux Android  
 ```
  python3 req_user_info.py
-  
+ python3 req_user_info.py jocker2410
 ```
 
 ## To-Do
