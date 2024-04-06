@@ -2,7 +2,7 @@ from colorama import Fore, Style
 import requests
 import json
 
-user = "jocker2410"
+user = "crawler"
 # get user data
 url = f"https://api.github.com/users/{user}"
 resp = requests.get(url)
