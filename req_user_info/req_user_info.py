@@ -48,9 +48,9 @@ for repo in repo_data:
     n=0
     for commit in commit_data:
         n += 1
-        print(Fore.GREEN + f"Committer:\t" + Fore.LIGHTYELLOW_EX + f"{commit['commit']['committer']['name']}",
-              Fore.GREEN + f"E-Mail:\t" + Fore.LIGHTYELLOW_EX + f"{commit['commit']['committer']['email']}",
-              Fore.GREEN + f"Update date:\t" + Fore.LIGHTYELLOW_EX + f"{commit['commit']['committer']['date']}",
+        print(Fore.GREEN + f"Committer:\t" + Fore.LIGHTYELLOW_EX + f"{commit['commit']['committer']['name']}\n",
+              Fore.GREEN + f"E-Mail:\t" + Fore.LIGHTYELLOW_EX + f"{commit['commit']['committer']['email']}\n",
+              Fore.GREEN + f"Update date:\t" + Fore.LIGHTYELLOW_EX + f"{commit['commit']['committer']['date']}\n",
               Fore.GREEN + f"Message:\t" + Fore.LIGHTYELLOW_EX + f"{commit['commit']['message']}\n")
     print(Style.BRIGHT + Fore.MAGENTA + f"{n} commints found for {repo['name']}")
     comm_num += n
