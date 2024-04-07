@@ -51,8 +51,14 @@ def get_repo_data(site):
         print(Style.BRIGHT + Fore.MAGENTA + f"{n} commints found for {repo['name']}")
         comm_num += n
     print(Fore.GREEN + "Found " + Fore.LIGHTYELLOW_EX + f"{comm_num}" + Fore.GREEN + " comments for " + Fore.LIGHTYELLOW_EX + f"{commit_data['login']}")
+def clear_screen():
+  if os.name == "nt":
+    os.system("cls")
+  else:
+    os.system("clear")
 
 def main():
+    clear_screen()
     user = sys.argv[1] if len(sys.argv) > 1 else f"jocker2410"
     site = "https://api.github.com"
     #get_user_data(site, user)
