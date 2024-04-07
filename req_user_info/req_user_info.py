@@ -2,6 +2,7 @@ from colorama import Fore, Style
 import requests
 import json
 import sys
+import os
 
 def acces_data(url):
     try:
