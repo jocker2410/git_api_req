@@ -35,9 +35,6 @@ def get_repo_data(site):
     print(Fore.CYAN + f"\nRepo Urls:")
     for repo in repo_data:
         print(Fore.GREEN + repo['clone_url'])
-    print("")
-    return repo_data
-
     comm_num = 0
     for repo in repo_data:
         repo_name = repo['name']
