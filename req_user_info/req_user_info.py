@@ -6,8 +6,7 @@ import os
 
 def acces_data(url):
     try:
-        resp = requests.get(url)
-        data = resp.json()
+        data = requests.get(url).json()
         return data
     except Exception as e:
         print(Fore.RED + f"[-] Site {url} can't be reached.\nError:{resp.status_code}")
