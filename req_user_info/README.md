@@ -13,7 +13,7 @@ Try it out and see what you can find! Maybe you'll discover your next favourite 
 - - - 
 
 ## 📚 How to use?
-</summary>
+
 ### Windows  
 ```
  py req_user_info.py
