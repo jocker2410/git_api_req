@@ -11,27 +11,25 @@ This project is a small exercise I'm doing in the hope of helping others. It's a
 ## 🚀Let's go? 
 Try it out and see what you can find! Maybe you'll discover your next favourite repository.
 - - - 
-<details>
- <summary>
- ## 📚 How to use?
- </summary>
- Windows  
- ```
-  py req_user_info.py
-  py req_user_info.py jocker2410
- ```
- Bash  
- ```
-  python3 req_user_info.py
-  python3 req_user_info.py jocker2410 
-  
- ```
- Tmux Android  
- ```
-  python3 req_user_info.py
-  python3 req_user_info.py jocker2410 
- ```
-</details>
+
+## 📚 How to use?
+</summary>
+### Windows  
+```
+ py req_user_info.py
+ py req_user_info.py jocker2410
+```
+### Bash  
+```
+ python3 req_user_info.py
+ python3 req_user_info.py jocker2410 
+ 
+```
+### Tmux Android  
+```
+ python3 req_user_info.py
+ python3 req_user_info.py jocker2410 
+```
 - - -
 ## Tested on the following systems:
 ### Windows 11:
