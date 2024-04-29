@@ -15,18 +15,18 @@ Try it out and see what you can find! Maybe you'll discover your next favourite 
  <summary>
  ## 📚 How to use?
  </summary>
- ### Windows  
+ Windows  
  ```
   py req_user_info.py
   py req_user_info.py jocker2410
  ```
- ### Bash  
+ Bash  
  ```
   python3 req_user_info.py
   python3 req_user_info.py jocker2410 
   
  ```
- ### Tmux Android  
+ Tmux Android  
  ```
   python3 req_user_info.py
   python3 req_user_info.py jocker2410 
