@@ -13,7 +13,9 @@ This project is a small exercise I conducted, hoping to help others with it. It'
 ## Let's go! ?
 
 Try it out and see what you can find! You might discover your next favorite repository. ?
-## ? How to use ?
+## How to use
+<details>
+ <summary>Usage for Android, Linux and Windows</summary>
 ### Tmux Android  
 ```
  python3 git_api_req.py
@@ -32,3 +34,4 @@ Try it out and see what you can find! You might discover your next favorite repo
  
  py git_api_req.py Crawler 
 ```
+</details>
