@@ -31,12 +31,11 @@ Try it out and see what you can find! Maybe you'll discover your next favourite 
  python3 req_user_info.py jocker2410 
 ```
 - - -
-## Tested on the following systems:
+## 🧪Tested on the following systems:
 ### Windows 11:
->? Windows 11 (NT 10.0.22631.0) 
+-->🖥️ Windows 11 (NT 10.0.22631.0) 
 ### Linux
-
->? Linux (Debian kali-pi 5.15.44-Re4son-v7+ 
+-->🐧 Linux (Debian kali-pi 5.15.44-Re4son-v7+ 
 ### Android 
->?Oneplus5 Linux kali 4.4.205-perf+ \
-?Oneplus9 Linux 5.4.233 Android 
+-->📱Oneplus5 Linux kali 4.4.205-perf+ \
+-->📱Oneplus9 Linux 5.4.233 Android 
