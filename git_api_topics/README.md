@@ -16,6 +16,7 @@ Try it out and see what you can find! You might discover your next favorite repo
 ## 📚 How to use ?
 <details>
  <summary>Usage for Android, Linux and Windows</summary>
+
 ### 📱Tmux Android
 
 ```
