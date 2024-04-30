@@ -16,19 +16,19 @@ Try it out and see what you can find! You might discover your next favorite repo
 ## How to use
 <details>
  <summary>Usage for Android, Linux and Windows</summary>
-### 📱Tmux Android  
+### Tmux Android  
 ```
  python3 git_api_req.py
  
  python3 git_api_req.py Crawler 
 ```
-### 🐧Bash  
+### Bash  
 ```
  python3 git_api_req.py
  
  python3 git_api_req.py Crawler 
 ```
-### 🖥️ Windows  
+### Windows  
 ```
  py git_api_req.py
  
